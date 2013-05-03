@@ -1,0 +1,126 @@
+
+indent()
+	padding-left:80px
+
+body
+	padding:0
+	margin:0
+
+.inner
+	_cf_()
+	_center_(780px)
+	margin-bottom:120px;
+
+
+#s1
+	position:absolute;
+	width:100%;
+	top:10px;
+	left:0;
+	z-index:1;
+	.inner
+		margin-bottom:0
+		background-repeat:no-repeat;
+		background-position:right 20px;
+		.side
+			indent()
+			padding-top:40px;
+			.intr
+				background-image:url("image/berief.png")
+				height:image-size("image/berief.png")[1]
+				width:image-size("image/berief.png")[0]
+			a.shop
+				_img_btn_("image/download.png",0,-1);
+				margin-top:20px;
+				margin-bottom:120px;
+			.share
+				p
+					font-size:15px;
+					color:#AAA
+				a
+					_fl_()
+					display:block;
+					height:32px;
+					width:32px;
+					margin-right:16px;
+					background-image:url("image/share.png")
+					cursor:pointer;
+					&.googleplus
+						background-position:0 0
+						&:hover
+							background-position:0 32px;
+					&.facebook
+						background-position:-46px 0
+						&:hover
+							background-position:-46px 32px;
+					&.sina
+						background-position:-92px 0
+						&:hover
+							background-position:-92px 32px;
+					&.renren
+						background-position:-138px 0
+						&:hover
+							background-position:-138px 32px;
+					&.douban
+						background-position:-184px 0
+						&:hover
+							background-position:-184px 32px;
+					&.qzone
+						background-position:-230px 0
+						&:hover
+							background-position:-230px 32px;
+				
+		.iphone
+			_img_div_("image/iphone.png")
+			_fr_()
+
+
+#bg
+	.top
+		height: 50px + 30 + 20 + image-size("image/berief.png")[1] + round(operate('/',image-size("image/download.png")[1],2)) + image-size("image/line.png")[1]
+	background-image:url("image/bg.png")
+	.bottom
+		height:image-size("image/line.png")[1]
+		background-image:url("image/line.png")
+	margin-bottom:200px;
+#downloadnow
+	_img_div_("image/downloadnow.png")
+	position:relative;
+	a.pro
+		_img_btn_("image/sellicon.png",0,6)
+		position:absolute
+		top:130px;
+		left:100px;
+		z-index:1;
+
+	a.free
+		_img_btn_("image/freeicon.png",0,6)
+		position:absolute
+		top:130px;
+		right:170px;
+		z-index:1;
+#f01
+	_img_div_("image/features01.png")
+#f02
+	_img_div_("image/features02.png")
+#f03
+	_img_div_("image/features03.png")
+#f04
+	_img_div_("image/features04.png")
+#email
+	_img_div_("image/email.png",0,-150)
+	padding-top:150px;
+	_center_()
+	a
+		margin-right:30px;
+		color:#09f;
+		font-weight:bold
+#s7
+	.inner
+		margin-bottom:30px;
+#s8
+	p
+		font-weight:bold
+		font-size:12px;
+		color:#AAA;
+		_center_()
